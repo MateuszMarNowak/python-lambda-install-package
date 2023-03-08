@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Echo Server
+Globals:
+  Function:
+    Timeout: 30
+
+Resources:
+  EchoServer: 
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: ./lambda
+      Handler: handler.lambda_handler
+      Runtime: python3.9
+      Architectures:
+        - x86_64
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /describe_package
+            Method: post
