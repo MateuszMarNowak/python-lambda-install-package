@@ -4,7 +4,9 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Usage](#usage)
+- [Prerequisites](#Prerequisites)
+- [Installing](#Installing)
+- [Examples](#Examples)
 
 ## About <a name = "about"></a>
 
@@ -14,14 +16,14 @@ Simple AWS Lambda Python project that installs packages in the runtime. To be ex
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### Prerequisites
+## Prerequisites
 
 ```
 pipenv
 python 3.9
 ```
 
-### Installing
+## Installing
 
 ```
 pipenv install
@@ -30,7 +32,7 @@ pipenv shell
 .bin/run_tests/sh
 ```
 
-### Examples
+## Examples
 Success Installation
 ![Alt text](/scr/success.PNG?raw=true "Success Installation")
 
